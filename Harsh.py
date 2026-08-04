@@ -20,7 +20,7 @@ def save_report(total_value):
         print("Report successfully save!")
         
     except Exception as error:
-        print("File save karte waqt error aaya:", error)
+        print("File save error:", error)
 
 calculated_total = calculate_total_inventory_value(inventory_list)
 save_report(calculated_total)
