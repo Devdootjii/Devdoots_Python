@@ -1,1 +1,2 @@
+This is total value:18500
 Total Inventory Value: 95000
