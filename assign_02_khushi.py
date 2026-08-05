@@ -27,10 +27,10 @@ class AdminUser(BaseUser):
 # Testing the implementation
 if __name__ == "__main__":
     try:
-        print("---  Smart Role-Based User Access System 👤 ---\n")
+        print("---  Smart Role-Based User Access System  ---\n")
 
         # BaseUser object
-        user1 = BaseUser("khushi_yadav", "khushi@gmail.com")
+        user1 = BaseUser("khushi_yadav", "khushiyadav1254@gmail.com")
         print("Standard User Profile:")
         print(user1.get_profile())
 
