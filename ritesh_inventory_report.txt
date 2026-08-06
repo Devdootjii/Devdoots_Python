@@ -1,0 +1,2 @@
+--- Smart Inventory Report ---
+Total Inventory Value: INR 275000
