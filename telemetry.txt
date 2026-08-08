@@ -1,0 +1,3 @@
+metrics : ('accuracy', 'loss', 'volatage') | config:{'lr': 0.01, 'status': 'online'}
+metrics : ('accuracy', 'loss', 'volatage') | config:{'lr': 0.01, 'status': 'online'}
+metrics : ('accuracy', 'loss', 'volatage') | config:{'lr': 0.01, 'status': 'online'}

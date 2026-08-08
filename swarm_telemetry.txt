@@ -1,0 +1,3 @@
+[SUCCESS] Cell CELL_01 | status:{'status': 'OPERATIONAL'} -> metrics:('Temp:45C',)
+[CRITICAL ERROR] Critical Alert: Cell Temperature 90°C exceeds 85°C!
+[WARNING ERROR] Power Warning: Low Battery Voltage at 10.0%V!
