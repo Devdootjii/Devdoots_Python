@@ -21,8 +21,6 @@ class SecureBankAccount:
         self.__pin = new_pin
         return "PIN updated successfully"
 
-
-
 #abstraction
 class BaseAIModel(ABC):
     @abstractmethod
