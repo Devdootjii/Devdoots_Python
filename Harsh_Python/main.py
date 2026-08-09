@@ -51,9 +51,7 @@ def run_simulation():
                 print(error_msg)
                 logger.write_log(error_msg)
 
-            print("-" * 55)
-
-    print("\n=== Reading All Logged Telemetry Files ===")
+    print(" Reading All Logged Telemetry Files ")
     logger.read_log()
 
 
