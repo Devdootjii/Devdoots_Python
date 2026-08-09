@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from exceptions import CellOverheatError, LowPowerError
+from khushi_exceptions import CellOverheatError, LowPowerError
 
 
 class BaseCell(ABC):
