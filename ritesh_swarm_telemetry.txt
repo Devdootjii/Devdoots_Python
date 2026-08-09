@@ -1,0 +1,12 @@
+[CRITICAL ERRROR] Cell Alpha-1 Overheated at 87 .^C
+[CRITICAL ERRROR] Cell Alpha-1 Overheated at 88 .^C
+[SUCCESS] Cell Alpha-1 pulse executed safely . | Power: 63.1%
+[SUCCESS] Cell Beta-2 pulse executed safely . | Power: 79.9%
+[SUCCESS] Cell Beta-2 pulse executed safely . | Power: 16.9%
+[SUCCESS] Cell Beta-2 pulse executed safely . | Power: 72.0%
+[SUCCESS] Cell Alpha-1 pulse executed safely . | Power: 75.8%
+[SUCCESS] Cell Alpha-1 pulse executed safely . | Power: 72.6%
+[CRITICAL ERRROR] Cell Alpha-1 Overheated at 95 .^C
+[CRITICAL ERRROR] Cell Beta-2 Overheated at 88 .^C
+[SUCCESS] Cell Beta-2 pulse executed safely . | Power: 98.2%
+[WARNING] cell Beta-2 Low Power at 13.5499118415092%
