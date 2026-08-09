@@ -1,7 +1,7 @@
 import random
-from cells import DivyCell
-from logger import SwarmLogger, format_percentage
-from exceptions import CellOverheatError, LowPowerError, SwarmError
+from khshi_cells import DivyCell
+from khushi_logger import SwarmLogger, format_percentage
+from khushi_exceptions import CellOverheatError, LowPowerError, SwarmError
 
 
 def run_simulation():
