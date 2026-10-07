@@ -63,24 +63,24 @@
 
 #program6
 
-num1 = int(input("Enter no : "))
-num2 = int(input("Enter no : "))
-num3 = int(input("Enter no : "))
-add = num1+num2+num3
-per = add/3
-print(per)
-if(100<=per>90):
-    print("Your Grade is Ex.")
-elif(90<=per>80):
-    print("Your garde is A")
-elif(80<=per>70):
-    print("Your garde is B")
-elif(70<=per>60):
-    print("Your garde is C")
-elif(60<=per>50):
-    print("Your garde is D")
-else:
-    print("ohh ! you failed")
+# num1 = int(input("Enter no : "))
+# num2 = int(input("Enter no : "))
+# num3 = int(input("Enter no : "))
+# add = num1+num2+num3
+# per = add/3
+# print(per)
+# if(100<=per>90):
+#     print("Your Grade is Ex.")
+# elif(90<=per>80):
+#     print("Your garde is A")
+# elif(80<=per>70):
+#     print("Your garde is B")
+# elif(70<=per>60):
+#     print("Your garde is C")
+# elif(60<=per>50):
+#     print("Your garde is D")
+# else:
+#     print("ohh ! you failed")
 
 #program7
 # post = "harry is good tutor!"
