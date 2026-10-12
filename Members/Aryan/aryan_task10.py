@@ -1,3 +1,4 @@
+
 # Day 10: OOP - Classes and Objects
 # Name: Aryan
 # What I learned today: Classes, Objects, Constructors and Methods
@@ -24,23 +25,23 @@ p3 = Product("Mouse", 500, 4)
 
 # Product 1 details
 print(f"\nProduct Name: {p1.name}")
-print(f"Price: ₹{p1.price}")
+print(f"Price: INR {p1.price}")
 print(f"Quantity: {p1.quantity}")
-print(f"Total Value: ₹{p1.total_value()}")
+print(f"Total Value: INR {p1.total_value()}")
 print(f"Is Expensive: {p1.is_expensive()}")
 
 
 # Product 2 details
 print(f"\nProduct Name: {p2.name}")
-print(f"Price: ₹{p2.price}")
+print(f"Price: INR {p2.price}")
 print(f"Quantity: {p2.quantity}")
-print(f"Total Value: ₹{p2.total_value()}")
+print(f"Total Value: INR {p2.total_value()}")
 print(f"Is Expensive: {p2.is_expensive()}")
 
 
 # Product 3 details
 print(f"\nProduct Name: {p3.name}")
-print(f"Price: ₹{p3.price}")
+print(f"Price: INR {p3.price}")
 print(f"Quantity: {p3.quantity}")
-print(f"Total Value: ₹{p3.total_value()}")
+print(f"Total Value: INR {p3.total_value()}")
 print(f"Is Expensive: {p3.is_expensive()}")
