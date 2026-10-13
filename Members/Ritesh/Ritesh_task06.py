@@ -2,44 +2,64 @@
 # Name: Ritesh
 # What I learned today: Persistent file logging using with context manager, and graceful crash control using try-except-finally.
 # Where I got stuck & fixed it: Handled initial FileNotFoundError on first read and prevented crashes on invalid string salaries.
-#Function 1:File me worker ka record (Append Mode)
+from datetime import datetime
+LOG_FILE = "h4x_payroll_audit.txt" 
+#function 1: Write worker record (append mode)
+def write_payroll_log(worker_name , final_salary):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = f"[{timestamp}] Worker: {worker_name}, | Net Salary: ${final_salary:.2f}\n"
+    with open(LOG_FILE, "a" , encoding="utf-8") as file:
+        file.write(log_entry)
+    print(f"Log written successfully for {worker_name}.")
 
-def write_payroll_log(worker_name, final_salary):
-   with open("ritesh_payroll_audit.txt"), "a" as file:
-       file.write(f"Worker : {worker_name} | Salary: Rs {final_salary}\n")
-   print (f"Record saved for {worker_name}")
-
-# Function 2: File se data padhna (Read Mode + Error Control)
+# Function 2: Read Worker Records (Read Mode + FileNotFoundError Handling)
 def read_payroll_log():
+    print("\n--- READING AUDIT LOG ---")
     try:
-        with open("ritesh_payroll_audit.txt" ,"r") as file:
-            print(file.read())
+        with open(LOG_FILE, "r", encoding="utf-8") as file:
+            content = file.read()
+            if content.strip() == "":
+                print("Audit log is empty.")
+            else:
+                print(content.strip())
     except FileNotFoundError:
-        print("Audit log file abhi exist nahi karti . pehele audit record create kare.")
+        print("Audit log file not exist. please create audit record.")
 
-# Function 3: User se sahi numeric salary lena (ValueError Control) 
-def get_vaild_salary_input(worker_name):
-    while true:
-        try:
-            salary = float(input(f"Enter salary for {worker_name}:"))    
+    finally:
+        print("--- AUDIT LOG READ OPERATION COMPLETED ---\n")
+
+# Function 3: Input Validation for Salary (ValueError Handling)
+def get_valid_salary_input(worker_name):
+    while True:
+        try: 
+            salary = float(input(f"Enter net salary for {worker_name}: "))
+            if salary <= 0:
+                print("Invalid input! Salary must be greater than 0 . ")
+                continue
             return salary
         except ValueError:
-            print("invalid input ! plz enter only numeric value.")
- #   main execution ( PDF flow ke mutabik)
- # Step 1 File na hone par error handle hogi
-print("Step 1: Reading file (Initial Check)..")
+            print("Invalid input! Please enter a valid numeric salary.")
+
+#  MAIN execution flow 
+print("========================================")
+print("     FACTORY AUDIT LOG SYSTEM   ")
+print("========================================")               
+# Step 1: Initial Read Test (Triggers FileNotFoundError if file is absent)
 read_payroll_log()
 
-# Step 2 & 3: 2 Workers ka data lena aur file me save karna
-print("\nStep 2 & 3: Enter Worker Details....")
-name1 = input("Enter Worker 1 Name: ")
-sal1 = get_valid_salary_input(name1)
-write_payroll_log(name1, sal1)
+# Step 2 & 3: Input and Write for 2 Workers
+for i in range(1,3):
+    worker_name = input(f"Enter worker{i} name:").strip()
+    while not worker_name:
+        print("Worker name cannot be empty. Please enter a valid name.")
+        worker_name = input(f"Enter worker{i} name:").strip()
+    salary = get_valid_salary_input(worker_name)
+    write_payroll_log(worker_name, salary)
 
-name2 = input("Enter Worker 2 Name: ")
-sal2 = get_valid_salary_input(name2)
-write_payroll_log(name2, sal2)
-
-# Step 4: Dubara file read karke terminal par saved record dikhaana
-print("\nStep 4: Reading Saved Records from File...")
+# Step 4: Final Read to display saved records from disk
+print("\nStep 4: Reading Updated Audit Log from Disk...")
 read_payroll_log()
+
+print("========================================")
+print("Audit Status: SUCCESSFUL")
+print("========================================")

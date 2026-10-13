@@ -1,0 +1,2 @@
+[2026-10-13 21:06:50] Worker: Ramesh, | Net Salary: $25000.00
+[2026-10-13 21:07:14] Worker: Divyansh, | Net Salary: $30000.00
