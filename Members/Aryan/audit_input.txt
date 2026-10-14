@@ -1,0 +1,7 @@
+Aman,40,250
+shreya,35,300
+Aman,10,250
+Rahul,abc,200
+Priya,20,150
+Karan,-5,100
+Neha,30,200
