@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ananya",
+        "marks": {
+            "DSA": 80,
+            "cs": 90
+        }
+    },
+    {
+        "name": "priya",
+        "marks": {
+            "DSA": 70,
+            "cs": 80
+        }
+    },
+    {
+        "name": "Khushi",
+        "marks": {
+            "DSA": 90,
+            "cs": 95
+        }
+    }
+]
