@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Divyash",
+        "marks": {
+            "math": 80,
+            "sci": 90
+        }
+    },
+    {
+        "name": "Priya",
+        "marks": {
+            "math": 75,
+            "sci": 85
+        }
+    },
+    {
+        "name": "Ritesh",
+        "marks": {
+            "math": 92,
+            "sci": 88
+        }
+    }
+]
