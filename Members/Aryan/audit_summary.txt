@@ -1,0 +1,6 @@
+EMPLOYEE PAYOUT SUMMARY
+=======================
+Aman: Rs 12500.00
+shreya: Rs 10500.00
+Priya: Rs 3000.00
+Neha: Rs 6000.00
