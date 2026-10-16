@@ -1,0 +1,3 @@
+khushi,40,850
+priya,30,700
+shivani,70,400

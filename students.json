@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "Mohan",
+        "Marks": {
+            "Maths": 90,
+            "Sci": 80
+        }
+    },
+    {
+        "Name": "Rohan",
+        "Marks": {
+            "Maths": 70,
+            "Sci": 75
+        }
+    }
+]
