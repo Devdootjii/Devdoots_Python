@@ -12,12 +12,12 @@ def tax(salary):
       tax_amount = salary * 5 / 100
       return(tax_amount)
 
-def netsalary(basic_salary, hra):
+def netsalary(basic_salary, hra, tax):
   total = basic_salary + hra
   netsalary = total - tax
   return(netsalary)
 
-p2 = netsalary(50000)
-p3 = netsalary(60000)
+p2 = netsalary(50000,  hra(50000), tax(50000))
+p3 = netsalary(60000,  hra(60000), tax(60000))
 print("p2 netsalary:",p2)
 print("p3 netsalary:",p3)
