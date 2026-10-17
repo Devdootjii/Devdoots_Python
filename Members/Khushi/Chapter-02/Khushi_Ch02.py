@@ -1,0 +1,18 @@
+def discount_rate(amount):
+    if amount >= 6000:
+        return 20
+    elif amount >= 1000:
+        return 10
+    else:
+        return 0
+
+def final_price(amount, rate):
+    final = amount - amount * rate / 100
+    return final
+
+amount = float(input("Enter amount: "))
+rate = discount_rate(amount)
+price = final_price(amount, rate)
+
+print("Discount rate:", rate, "%")
+print("Final price:", price)
