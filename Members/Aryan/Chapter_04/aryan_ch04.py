@@ -17,22 +17,20 @@ def average(nums):
 
 
 students = [
-    {"name": "Shriya", "marks": 90},
+    {"name": "Riya", "marks": 90},
     {"name": "Aman", "marks": 65}
 ]
-
-for s in students:
-    name = s["name"]
-    marks = s["marks"]
-    result = grade(marks)
-
-    print(name, result)
 
 marks_list = []
 
 for s in students:
-    marks_list.append(s["marks"])
+    name = s["name"]
+    marks = s["marks"]
+
+    result = grade(marks)
+    print(name, result)
+
+    marks_list.append(marks)
 
 class_average = average(marks_list)
-
 print("Class Average:", class_average)
