@@ -45,4 +45,3 @@ with open(path,"w") as f:
 with open(path,"r") as f:
     print(json.load(f))
     
-
