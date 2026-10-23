@@ -53,7 +53,7 @@ questions = [
 
 print("\nProblem 4:")
 for question in questions:
-    print(question["q"])
+    print(questions[0]["q"])
 
 
 # Problem 5 - Files & JSON
