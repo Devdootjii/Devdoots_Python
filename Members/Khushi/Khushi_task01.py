@@ -30,7 +30,17 @@ else:
     if customer == "student" or customer == "senior":
         extra_discount += 5
 
-    if vip == "yes" and amount > 1000:
+    
+print("Discount Amount      : -₹", discount)
+
+print("---------------------------------------")
+
+print("Price After Discount :", after_discount)
+print("GST Tax (18%)        : +₹", gst)
+
+print("=======================================")
+print("FINAL PAYABLE AMOUNT :₹", final)
+print("=======================================")if vip == "yes" and amount > 1000:
         extra_discount += 5
 
 # -------- TOTAL DISCOUNT ----------
@@ -59,15 +69,5 @@ print("---------------------------------------")
 print("Base Discount        :", base_discount, "%")
 print("Extra Discount       :", extra_discount, "%")
 print("Total Discount Rate  :", total_discount, "%")
-print("Discount Amount      : -₹", discount)
-
-print("---------------------------------------")
-
-print("Price After Discount :", after_discount)
-print("GST Tax (18%)        : +₹", gst)
-
-print("=======================================")
-print("FINAL PAYABLE AMOUNT :₹", final)
-print("=======================================")
 
 print("Thank you for shopping with us!")
